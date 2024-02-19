@@ -8,7 +8,16 @@
   <body>
     <h1 style="text-align:center"><font size ="9">Contact Us</font></h1>
   </body>
-  <form style="padding:10px" method="post" action="/contact-form-data/">
+  input, textarea, button {
+  font-size: 1.4rem;
+  padding: 10px;
+  border: none;
+}
+
+input, textarea {
+  background-color: #ccc;
+}
+  <form method="post" action="/contact-form-data/">
     <input name="readername" type="text" placeholder="your name" required/><br>
     <input name="readeremail" type="email" placeholder="your email" required/><br>
     <textarea name="message" rows="5" cols="30" placeholder="Message" required></textarea><br>
